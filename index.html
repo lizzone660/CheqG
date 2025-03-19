@@ -1,75 +1,99 @@
-
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Training</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Entertainment Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">FitMaster</div>
+        <div class="logo">Entertainment Hub</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#workouts">Workouts</a></li>
-                <li><a href="#nutrition">Nutrition</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#songs">New Songs</a></li>
+                <li><a href="#videos">Videos</a></li>
             </ul>
         </nav>
     </header>
+    <section id="home" class="hero">
+        <h1>Welcome to Entertainment Hub</h1>
+        <p>Your go-to place for the latest movies, songs, and videos!</p>
+    </section>
 
-    <section id="home">
-        <div class="hero">
-            <h1>Transform Your Body</h1>
-            <p>Start your fitness journey today with easy-to-follow workout plans and tips.</p>
-            <a href="#workouts" class="cta-btn">Get Started</a>
+    <section id="movies" class="content">
+        <h2>Latest Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <p>A brief description of the movie.</p>
+                <button onclick="showDetails('Movie 1')">Watch Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3>Movie Title 2</h3>
+                <p>A brief description of the movie.</p>
+                <button onclick="showDetails('Movie 2')">Watch Now</button>
+            </div>
+            <!-- Add more movie cards as needed -->
         </div>
     </section>
 
-    <section id="workouts">
-        <h2>Featured Workouts</h2>
-        <div class="workout-grid">
-            <div class="workout-card">
-                <h3>Full Body Burn</h3>
-                <p>Boost your endurance with this high-energy workout.</p>
-                <button class="workout-btn" onclick="startTimer()">Start Workout</button>
+    <section id="songs" class="content">
+        <h2>New Songs</h2>
+        <div class="song-grid">
+            <div class="song-card">
+                <img src="song1.jpg" alt="Song 1">
+                <h3>Song Title 1</h3>
+                <p>A brief description of the song.</p>
+                <button onclick="playSong('Song 1')">Play Now</button>
             </div>
-            <div class="workout-card">
-                <h3>Core Crusher</h3>
-                <p>Target your abs and core with this workout.</p>
-                <button class="workout-btn" onclick="startTimer()">Start Workout</button>
+            <div class="song-card">
+                <img src="song2.jpg" alt="Song 2">
+                <h3>Song Title 2</h3>
+                <p>A brief description of the song.</p>
+                <button onclick="playSong('Song 2')">Play Now</button>
             </div>
-            <div class="workout-card">
-                <h3>Leg Day</h3>
-                <p>Strengthen your legs with these power moves.</p>
-                <button class="workout-btn" onclick="startTimer()">Start Workout</button>
-            </div>
+            <!-- Add more song cards as needed -->
         </div>
     </section>
 
-    <section id="nutrition">
-        <h2>Nutrition Tips</h2>
-        <p>Fuel your body with healthy, easy-to-make meals.</p>
-        <a href="#" class="cta-btn">Learn More</a>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have any questions? Reach out to us!</p>
-        <form>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="videos" class="content">
+        <h2>Trending Videos</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <img src="video1.jpg" alt="Video 1">
+                <h3>Video Title 1</h3>
+                <button onclick="playVideo('video1.mp4')">Watch Now</button>
+            </div>
+            <div class="video-card">
+                <img src="video2.jpg" alt="Video 2">
+                <h3>Video Title 2</h3>
+                <button onclick="playVideo('video2.mp4')">Watch Now</button>
+            </div>
+            <!-- Add more video cards as needed -->
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 FitMaster. All rights reserved.</p>
+        <p>&copy; 2025 Entertainment Hub. All rights reserved.</p>
+        <div class="adsense-ad">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-XXXXXX"  <!-- Replace with your AdSense client ID -->
+[3/10, 4:44 PM] Chatgpt: data-ad-slot="XXXXXXX"  <!-- Replace with your ad slot ID -->
+                data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-

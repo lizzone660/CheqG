@@ -1,13 +1,16 @@
-function show() {
-    document.getElementById("ans1").style.display = "block"
-}
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-function show2() {
-    document.getElementById("ans2").style.display = "block"
-}
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you for reaching out! We will get back to you soon.');
+}); 
 
-
-function show3() {
-    document.getElementById("ans3").style.display = "block"
-}
